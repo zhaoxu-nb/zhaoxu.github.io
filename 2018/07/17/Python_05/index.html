@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 九日的个人博客</title>
+  <title>Python基础5——字符串操作 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="九日的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="字符串函数查看字符串的所有函数12str = &apos;&apos;print(dir(str)) 字符串的大小写转换1234567891011str = &quot;asda a34ad fdFsdf AAAsd&quot;# 将字符串的第一个字母变成大写,其他字母变小写print(str.capitalize())		#Asda a34 ad fdfsdf aaasd# 所有单词都是以大写开始，其余字母均为小写print(str.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基础5——字符串操作">
+<meta property="og:url" content="http://yoursite.com/2018/07/17/Python_05/index.html">
 <meta property="og:site_name" content="九日的个人博客">
+<meta property="og:description" content="字符串函数查看字符串的所有函数12str = &apos;&apos;print(dir(str)) 字符串的大小写转换1234567891011str = &quot;asda a34ad fdFsdf AAAsd&quot;# 将字符串的第一个字母变成大写,其他字母变小写print(str.capitalize())		#Asda a34 ad fdfsdf aaasd# 所有单词都是以大写开始，其余字母均为小写print(str.">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-17T10:55:31.428Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="九日的个人博客">
+<meta name="twitter:title" content="Python基础5——字符串操作">
+<meta name="twitter:description" content="字符串函数查看字符串的所有函数12str = &apos;&apos;print(dir(str)) 字符串的大小写转换1234567891011str = &quot;asda a34ad fdFsdf AAAsd&quot;# 将字符串的第一个字母变成大写,其他字母变小写print(str.capitalize())		#Asda a34 ad fdfsdf aaasd# 所有单词都是以大写开始，其余字母均为小写print(str.">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -150,76 +154,164 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Python_05" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Python基础5——字符串操作
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/17/Python_05/" class="archive-article-date">
+
+        
+        <a href="/2018/07/17/Python_05/" class="archive-article-date">
   	<time datetime="2018-07-17T10:55:30.755Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/17/Python_05/">Python基础5——字符串操作</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h2><p>查看字符串的所有函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">''</span></span><br><span class="line"><span class="built_in">print</span>(dir(str))</span><br></pre></td></tr></table></figure></p>
+<h3 id="字符串的大小写转换"><a href="#字符串的大小写转换" class="headerlink" title="字符串的大小写转换"></a>字符串的大小写转换</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">"asda a34ad fdFsdf AAAsd"</span></span><br><span class="line"><span class="comment"># 将字符串的第一个字母变成大写,其他字母变小写</span></span><br><span class="line"><span class="built_in">print</span>(str.capitalize())		<span class="comment">#Asda a34 ad fdfsdf aaasd</span></span><br><span class="line"><span class="comment"># 所有单词都是以大写开始，其余字母均为小写</span></span><br><span class="line"><span class="built_in">print</span>(str.title())		<span class="comment">#Asda A34 Ad Fdfsdf Aaasd</span></span><br><span class="line"><span class="comment"># 将字符串中的小写字母转为大写字母</span></span><br><span class="line"><span class="built_in">print</span>(str.upper())		<span class="comment">#ASDA A34 AD FDFSDF AAASD</span></span><br><span class="line"><span class="comment"># 字符串中所有大写字符为小写</span></span><br><span class="line"><span class="built_in">print</span>(str.lower())		<span class="comment">#asda a34 ad fdfsdf aaasd</span></span><br><span class="line"><span class="comment"># 对字符串的大小写字母进行转换</span></span><br><span class="line"><span class="built_in">print</span>(str.swapcase())		<span class="comment">#ASDA A34 AD FDfSDF aaaSD</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串的内容查找"><a href="#字符串的内容查找" class="headerlink" title="字符串的内容查找"></a>字符串的内容查找</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">"asda a34ad fdFsdf AAAsd"</span></span><br><span class="line"><span class="comment"># 计算字符串长度</span></span><br><span class="line"><span class="built_in">print</span>(len(str))		<span class="comment">#24</span></span><br><span class="line"><span class="comment"># 计算指定字符串出现的次数</span></span><br><span class="line"><span class="built_in">print</span>(str.count(<span class="string">'a'</span>, 0, 6))		<span class="comment">#3</span></span><br><span class="line"><span class="comment"># 查找指定字符串第一次出现的位置，找不到返回-1</span></span><br><span class="line"><span class="built_in">print</span>(str.find(<span class="string">'sd'</span>, 0, 9))		<span class="comment">#1</span></span><br><span class="line"><span class="comment"># 跟find()方法一样，只不过如果str不在 string中会报一个异常（str找不到）</span></span><br><span class="line"><span class="built_in">print</span>(str.index(<span class="string">'sd'</span>, 0, 9))	<span class="comment">#1</span></span><br><span class="line"><span class="comment"># 检测字符串是否以指定的字符串开头</span></span><br><span class="line"><span class="built_in">print</span>(str.startswith(<span class="string">'as'</span>))		<span class="comment">#True</span></span><br><span class="line"><span class="comment"># 检测字符串是否以指定的字符串结尾</span></span><br><span class="line"><span class="built_in">print</span>(str.endswith(<span class="string">'sb'</span>))		<span class="comment">#False</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串的内容检测"><a href="#字符串的内容检测" class="headerlink" title="字符串的内容检测"></a>字符串的内容检测</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"wbb2333 2333WBB"</span></span><br><span class="line"><span class="comment"># 检测字符串中所有的字母是否都为大写</span></span><br><span class="line"><span class="built_in">print</span>(str1.isupper())       <span class="comment">#False</span></span><br><span class="line"><span class="comment"># 检测字符串是否由小写字母组成</span></span><br><span class="line"><span class="built_in">print</span>(str1.islower())       <span class="comment">#False</span></span><br><span class="line"><span class="comment"># 检测字符串是否由字母和数字组成，空字符串为false</span></span><br><span class="line"><span class="built_in">print</span>(str1.isalnum())       <span class="comment">#False</span></span><br><span class="line"><span class="comment"># 检测字符串是否只由字母组成，带符号返回false</span></span><br><span class="line"><span class="built_in">print</span>(str1.isalpha())       <span class="comment">#False</span></span><br><span class="line"><span class="comment"># 检测字符串是否只由数字组成（只识别十进制），空字符串为false</span></span><br><span class="line"><span class="built_in">print</span>(str1.isdigit())       <span class="comment">#False</span></span><br><span class="line"><span class="comment"># 检测字符串是否只由空格组成</span></span><br><span class="line"><span class="built_in">print</span>(str1.isspace())       <span class="comment">#False</span></span><br><span class="line"><span class="comment"># 检测字符串中所有的单词拼写首字母是否为大写，且其他字母为小写</span></span><br><span class="line"><span class="built_in">print</span>(str1.istitle())       <span class="comment">#False</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串的分割"><a href="#字符串的分割" class="headerlink" title="字符串的分割"></a>字符串的分割</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"how old are you"</span></span><br><span class="line"><span class="comment"># 指定分隔符对字符串进行切割（列表），如果num有指定值，则仅分隔num个子字符串</span></span><br><span class="line"><span class="built_in">print</span>(str1.split())     <span class="comment">#['how', 'old', 'are', 'you']  ()不写默认为空格</span></span><br><span class="line"><span class="built_in">print</span>(str1.split(<span class="string">' '</span>,1))      <span class="comment">#['how', 'old', 'are you']</span></span><br><span class="line"><span class="comment"># 将序列以指定的字符拼接成一个字符串（join是split的逆操作） join(字符串、列表、元组、字典（键）)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"_"</span>.join(str1))       <span class="comment">#h_o_w_ _o_l_d_ _a_r_e_ _y_o_u</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">"_"</span>.join(str1.split()))       <span class="comment">#how_old_are_you</span></span><br><span class="line"><span class="comment"># 返回指定长度的字符串，原字符串右对齐，前面填充0</span></span><br><span class="line"><span class="built_in">print</span>(str1.zfill(20))       <span class="comment">#00000how old are you</span></span><br><span class="line"><span class="comment"># 原字符串居中，并使用空格填充至长度width，默认为空格</span></span><br><span class="line"><span class="built_in">print</span>(str1.center(20,<span class="string">'*'</span>))      <span class="comment">#**how old are you***</span></span><br><span class="line"><span class="comment"># 返回一个原字符串左对齐，默认使用空格填充至指定宽度，如果宽度小与原字符串的长度则返回原字符串</span></span><br><span class="line"><span class="built_in">print</span>(str1.ljust(20,<span class="string">'*'</span>))       <span class="comment">#how old are you*****</span></span><br><span class="line"><span class="comment"># 返回一个原字符串右对齐，默认使用空格填充至指定宽度，如果宽度小与原字符串的长度则返回原字符串</span></span><br><span class="line"><span class="built_in">print</span>(str1.rjust(20,<span class="string">'*'</span>))       <span class="comment">#*****how old are you</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串的移除"><a href="#字符串的移除" class="headerlink" title="字符串的移除"></a>字符串的移除</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"    asddasd     adad    "</span></span><br><span class="line"><span class="comment"># 移除字符串头尾指定的字符（默认为空格或换行）</span></span><br><span class="line"><span class="built_in">print</span>(str1.strip(<span class="string">' '</span>))      <span class="comment">#asddasd     adad</span></span><br><span class="line"><span class="comment"># 移除字符串左侧指定的字符</span></span><br><span class="line"><span class="built_in">print</span>(str1.lstrip(<span class="string">' '</span>))     <span class="comment">#asddasd     adad</span></span><br><span class="line"><span class="comment"># 移除字符串右侧指定的字符</span></span><br><span class="line"><span class="built_in">print</span>(str1.rstrip(<span class="string">' '</span>))     <span class="comment">#    asddasd     adad</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串的替换"><a href="#字符串的替换" class="headerlink" title="字符串的替换"></a>字符串的替换</h3><p>string str.replace(old, new[, max])<br>把字符串中的 old（旧字符串） 替换成 new(新字符串)，如果指定第三个参数max，则替换不超过 max 次<br>old – 将被替换的子字符串。<br>new – 新字符串，用于替换old子字符串。<br>max – 可选字符串, 替换不超过 max 次。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"This is a small island"</span></span><br><span class="line"><span class="built_in">print</span>(str1.replace(<span class="string">'is'</span>,<span class="string">'was'</span>))     <span class="comment">#Thwas was a small wasland</span></span><br><span class="line"><span class="built_in">print</span>(str1.replace(<span class="string">'is'</span>,<span class="string">'was'</span>,2))       <span class="comment">#Thwas was a small island</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="字符串的映射"><a href="#字符串的映射" class="headerlink" title="字符串的映射"></a>字符串的映射</h3><p>maketrans()方法用来生成字符映射表，而translate()方法则按映射表中定义<br>的对应关系转换并替换其中的字符，使用这两个方法的组合可以同时处理多个不同的字符，replace()方法则无法满足这一要求。<br>在Python中，字符串属于不可变对象，不支持原地修改，如果需要修改其中的值<br>，只能重新创建一个新的字符串对象。然而，如果确实需要一个支持原地修改的unicode数据对象，可以使用io.StringIO对象或array模块。<br>第一步:使用maketrans()创建字符串映射的转换表<br>str.maketrans(intab, outtab)<br>第二步：使用translate() 方法根据参数table映射表转换字符串的字符<br>注意：两个字符串的长度必须相同，为一一对应的关系<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">"b3"</span></span><br><span class="line">str2 = <span class="string">"d9"</span></span><br><span class="line">tab = <span class="string">''</span>.maketrans(str1,str2)</span><br><span class="line">str = <span class="string">"wbb233"</span></span><br><span class="line"><span class="built_in">print</span>(str.translate(tab))       <span class="comment">#wdd299</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="字符串的替换-format"><a href="#字符串的替换-format" class="headerlink" title="字符串的替换-format"></a>字符串的替换-format</h3><p>Python2.6 开始，新增了一种格式化字符串的函数<br>str.format()，它增强了字符串格式化的功能<br>位置参数（调用函数时根据函数定义的参数位置来传递参数）<br>关键词参数格式：用于函数调用，通过“键-值”形式加以指定<br>非关键词参数：不使用关键词<br>多次利用参数：重复利用多次<br>填充与对齐：<br>    格式：{：}号后面带填充的字符，只能是一个字符，不指定则默认是用空格填充<br>    &gt;右对齐<br>    &lt;左对齐<br>    ^居中对齐<br>    {:.2f}精度计算，保留两位小数<br>    {：b}二进制  {:d}十进制  {:o}八进制  {:x}十六进制<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">str=<span class="string">'我的名字叫Jack,&#123;: &gt;20&#125;'</span></span><br><span class="line">res=str.format(<span class="string">'身高165'</span>)</span><br><span class="line"><span class="built_in">print</span>(res)      <span class="comment">#我的名字叫Jack,               身高165</span></span><br><span class="line">str=<span class="string">'我的名字叫Jack,&#123;:*&gt;20&#125;'</span></span><br><span class="line">res=str.format(<span class="string">'身高165'</span>)</span><br><span class="line"><span class="built_in">print</span>(res)      <span class="comment">#我的名字叫Jack,***************身高165</span></span><br><span class="line">str=<span class="string">'我的名字叫Jack,&#123;:*&lt;20&#125;'</span></span><br><span class="line">res=str.format(<span class="string">'身高165'</span>)</span><br><span class="line"><span class="built_in">print</span>(res)      <span class="comment">#我的名字叫Jack,身高165***************</span></span><br><span class="line">str=<span class="string">'我的名字叫Jack,&#123;:*^20&#125;'</span></span><br><span class="line">res=str.format(<span class="string">'身高165'</span>)</span><br><span class="line"><span class="built_in">print</span>(res)      <span class="comment">#我的名字叫Jack,*******身高165********</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1、实现字符串反转 输入str="string"输出'gnirts'</span></span><br><span class="line">str = <span class="string">"string"</span></span><br><span class="line"><span class="built_in">print</span>(str[::-1])</span><br><span class="line"><span class="comment">#2、输入一行字符， 分别统计出其中英文字母、空格、数字和其它字符的个数</span></span><br><span class="line">str1 = input(<span class="string">"请输入一行字符串："</span>)</span><br><span class="line">zm = kg = sz = qt = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> str1:</span><br><span class="line">    <span class="comment">#if (i &gt;= 'a' and i &lt;= 'z') or (i &gt;= 'A' and i &lt;= 'Z'):</span></span><br><span class="line">    <span class="keyword">if</span> i.isalpha():</span><br><span class="line">        zm += 1</span><br><span class="line">    <span class="comment">#elif i == ' ':</span></span><br><span class="line">    <span class="keyword">elif</span> i.isspace():</span><br><span class="line">        kg += 1</span><br><span class="line">    <span class="comment">#elif i &gt;= '0' and i &lt;= '9':</span></span><br><span class="line">    <span class="keyword">elif</span> i.isdigit():</span><br><span class="line">        sz += 1</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        qt += 1</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"字符串中字母有%d个，数字有%d个，空格有%d个，其它字符有%d个"</span> % (zm, sz, kg, qt))</span><br><span class="line"><span class="comment">#3、一球从100米高度自由落下，每次落地后反跳回原高度的一半，再落下，求他在第10次落地时，共经过多少米？第10次反弹多高</span></span><br><span class="line">c = b = 100</span><br><span class="line">a = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    a += c</span><br><span class="line">    b = b/2</span><br><span class="line">    c = 2*b</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"共经过%.8f米，第十次反弹%.8f米"</span> % (a, b))</span><br><span class="line"><span class="comment">#生成器  迭代</span></span><br><span class="line">def fib(h):</span><br><span class="line">    a, b, c = 0, 100, 100</span><br><span class="line">    n = 1</span><br><span class="line">    <span class="keyword">while</span> n &lt;= h:</span><br><span class="line">        a += c</span><br><span class="line">        b = b/2</span><br><span class="line">        c = 2*b</span><br><span class="line">        yield a, b</span><br><span class="line">        n += 1</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">done</span></span><br><span class="line">f = fib(10)</span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(100, 50.0)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(200.0, 25.0)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(250.0, 12.5)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(275.0, 6.25)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(287.5, 3.125)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(293.75, 1.5625)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(296.875, 0.78125)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(298.4375, 0.390625)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(299.21875, 0.1953125)</span></span><br><span class="line"><span class="built_in">print</span>(next(f))  <span class="comment">#(299.609375, 0.09765625)</span></span><br><span class="line"><span class="comment">#4、有字符串s = ‘alex’通过操作该字符串构造一个字符串s1 = ‘a_l_e_x’</span></span><br><span class="line">s = <span class="string">'alex'</span></span><br><span class="line">s=<span class="string">'_'</span>.join(s)</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="comment">#5、有字符串s = ‘alex wusir’,通过操作该字符串构造一个列表li = [‘alex’,’wusir’]</span></span><br><span class="line">s = <span class="string">'alex wusir'</span></span><br><span class="line">li = s.split()</span><br><span class="line"><span class="built_in">print</span>(li)</span><br><span class="line"><span class="comment">#5、li = ['sam','tom','jack’]利用下划线将列表的每一个元素拼接成字符串"sam_tom_jack"</span></span><br><span class="line">li = [<span class="string">'sam'</span>, <span class="string">'tom'</span>, <span class="string">'jack'</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'_'</span>.join(li))</span><br><span class="line"><span class="comment">#6、'扁担长，板凳宽。板凳没有扁担长，扁担没有板凳宽。扁担要绑在板凳上，板凳偏不让扁担绑在板凳上'。请计算出‘扁担子串在字符串中出现的次数，并输出该次数</span></span><br><span class="line"><span class="built_in">print</span>(len(str1.split(<span class="string">'扁担'</span>))-1)</span><br><span class="line"><span class="comment">#7、已知字符串 a = “aAsmr3idd4bgs7Dlsf9eAF”   请将a字符串的大写改为小写，小写改为大写    请将a字符串的数字取出，并输出成一个新的字符串</span></span><br><span class="line">a = <span class="string">"aAsmr3idd4bgs7Dlsf9eAF"</span></span><br><span class="line"><span class="built_in">print</span>(a.swapcase())</span><br><span class="line">list1 = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">    <span class="comment">#if i &gt;= '0' and i &lt;= '9':</span></span><br><span class="line">    <span class="keyword">if</span> i.isdigit():</span><br><span class="line">        list1.append(i)</span><br><span class="line"><span class="built_in">print</span>(str(list1))</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/17/Python_05/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-14T10:13:24.011Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +334,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
