@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 九日的个人博客</title>
+  <title>Python基础6——数学函数的相关操作 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="九日的个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="字符串模块操作什么是模块？    Python 模块(Module)，是一个 Python 文件，以 .py 结尾，包含了 Python 对象定义和Python语句。    模块让你能够有逻辑地组织你的 Python 代码段。    把相关的代码分配到一个模块里能让你的代码更好用，更易懂。    模块能定义函数，类和变量，模块里也能包含可执行的代码。模块的引入：12import keywordim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基础6——数学函数的相关操作">
+<meta property="og:url" content="http://yoursite.com/2018/07/19/Python_06/index.html">
 <meta property="og:site_name" content="九日的个人博客">
+<meta property="og:description" content="字符串模块操作什么是模块？    Python 模块(Module)，是一个 Python 文件，以 .py 结尾，包含了 Python 对象定义和Python语句。    模块让你能够有逻辑地组织你的 Python 代码段。    把相关的代码分配到一个模块里能让你的代码更好用，更易懂。    模块能定义函数，类和变量，模块里也能包含可执行的代码。模块的引入：12import keywordim">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-19T06:01:51.287Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="九日的个人博客">
+<meta name="twitter:title" content="Python基础6——数学函数的相关操作">
+<meta name="twitter:description" content="字符串模块操作什么是模块？    Python 模块(Module)，是一个 Python 文件，以 .py 结尾，包含了 Python 对象定义和Python语句。    模块让你能够有逻辑地组织你的 Python 代码段。    把相关的代码分配到一个模块里能让你的代码更好用，更易懂。    模块能定义函数，类和变量，模块里也能包含可执行的代码。模块的引入：12import keywordim">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -150,259 +154,177 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Python_06" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.755Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_07/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.754Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_07/">Python基础7——列表、元组、字典、集合的相关操作</a>
+    <h1 class="article-title" itemprop="name">
+      Python基础6——数学函数的相关操作
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_06/" class="archive-article-date">
+        
+        <a href="/2018/07/19/Python_06/" class="archive-article-date">
   	<time datetime="2018-07-19T12:38:14.752Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_06/">Python基础6——数学函数的相关操作</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="字符串模块操作"><a href="#字符串模块操作" class="headerlink" title="字符串模块操作"></a>字符串模块操作</h2><p>什么是模块？<br>    Python 模块(Module)，是一个 Python 文件，以 .py 结尾，包含了 Python 对象定义和Python语句。<br>    模块让你能够有逻辑地组织你的 Python 代码段。<br>    把相关的代码分配到一个模块里能让你的代码更好用，更易懂。<br>    模块能定义函数，类和变量，模块里也能包含可执行的代码。<br>模块的引入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import keyword</span><br><span class="line">import string</span><br></pre></td></tr></table></figure></p>
+<p>ASCII编码的转换<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(chr(97))		<span class="comment">#A  将数字转换为对应的ASCII码值</span></span><br><span class="line"><span class="built_in">print</span>(ord(<span class="string">'A'</span>))		<span class="comment">#65 将ASCII码值转为对应的数字</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="数学模块math"><a href="#数学模块math" class="headerlink" title="数学模块math"></a>数学模块math</h2><p>python中的数学模块需要导入<br>导入模块：import math<br>数学模块分为三个模块：数学函数，随机数函数，三角函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import math</span><br><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))		<span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))		<span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))		<span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))		<span class="comment">#18</span></span><br><span class="line"><span class="comment">#返回小数部分与整数部分</span></span><br><span class="line"><span class="built_in">print</span>(math.modf(22.3))		<span class="comment">#(0.3000000000000007, 22.0)</span></span><br><span class="line"><span class="comment">#开方</span></span><br><span class="line"><span class="built_in">print</span>(math.sqrt(9))			<span class="comment">#3.0</span></span><br><span class="line"><span class="comment">#获取e的x次幂</span></span><br><span class="line"><span class="built_in">print</span>(math.exp(3))			<span class="comment">#20.085536923187668</span></span><br><span class="line"><span class="comment">#获取绝对值的浮点数</span></span><br><span class="line"><span class="built_in">print</span>(math.fabs(-5))		<span class="comment">#5</span></span><br><span class="line"><span class="comment">#获取常量π</span></span><br><span class="line"><span class="built_in">print</span>(math.pi)				<span class="comment">#3.141592653589793</span></span><br><span class="line"><span class="comment">#获取常量e</span></span><br><span class="line"><span class="built_in">print</span>(math.e)				<span class="comment">#2.718281828459045</span></span><br></pre></td></tr></table></figure></p>
+<p>系统内置的数学函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#获取系统所有内置函数</span></span><br><span class="line"><span class="built_in">print</span>(dir(__builtins__))</span><br><span class="line"><span class="comment">#绝对值</span></span><br><span class="line"><span class="built_in">print</span>(abs(-10))			<span class="comment">#10</span></span><br><span class="line"><span class="comment">#比较两个数的大小</span></span><br><span class="line"><span class="built_in">print</span>(max(1,2,3,4,5))	<span class="comment">#5</span></span><br><span class="line"><span class="built_in">print</span>(min(1,2,3,4,5))	<span class="comment">#1</span></span><br><span class="line"><span class="comment">#求x的y次方</span></span><br><span class="line"><span class="built_in">print</span>(pow(2,5))			<span class="comment">#32</span></span><br><span class="line"><span class="comment">#四舍五入</span></span><br><span class="line"><span class="built_in">print</span>(round(2.6444,2))  <span class="comment">#2.64 保留两位小数</span></span><br><span class="line"><span class="built_in">print</span>(round(2.6444,1))  <span class="comment">#2.6 保留一位小数</span></span><br><span class="line"><span class="built_in">print</span>(round(2.5))  <span class="comment">#2</span></span><br><span class="line"><span class="built_in">print</span>(round(1.5))  <span class="comment">#2 返回最近的偶数倍数</span></span><br><span class="line"><span class="comment">#求和</span></span><br><span class="line"><span class="built_in">print</span>(sum(&#123;1,2,3&#125;))		<span class="comment">#6</span></span><br><span class="line"><span class="comment">#序列求和</span></span><br><span class="line"><span class="built_in">print</span>(sum(range(5)))	<span class="comment">#10</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="del语句"><a href="#del语句" class="headerlink" title="del语句"></a>del语句</h2><p>可以通过使用del语句删除单个或多个对象<br>使用del删除元素，删除多个时，中间用逗号隔开<br>在列表中删除一个元素之后，会重新将内容的下标排序<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var1=1</span><br><span class="line">var2=2</span><br><span class="line">del var2,var1</span><br><span class="line"><span class="built_in">print</span>(var1)		<span class="comment">#NameError: name 'var1' is not defined</span></span><br><span class="line"><span class="comment">#删除列表中的前两个元素</span></span><br><span class="line">lists=[<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>]</span><br><span class="line">del lists[0],lists[0]</span><br><span class="line"><span class="built_in">print</span>(lists)	<span class="comment">#['c']</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="random函数"><a href="#random函数" class="headerlink" title="random函数"></a>random函数</h2><p>引入随机数：import random<br>随机数可以用于数学，游戏，安全等领域中，还经常被嵌入到算法中，用以提高算法效率，并提高程序的安全性<br>random.choice()<br>    从序列的元素中随机挑选一个元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(random.choice([1,2,4,5,6,8]))</span><br><span class="line"><span class="built_in">print</span>(random.choice(range(5)))</span><br><span class="line"><span class="built_in">print</span>(random.choice(<span class="string">"hello"</span>))</span><br><span class="line"><span class="built_in">print</span>(random.choice(range(10))+1)  <span class="comment">#输出为随机值加1</span></span><br></pre></td></tr></table></figure></p>
+<p>random.shuffle()<br>将序列中的所有元素随机排序，获取固定下标的值，类似于choice，随机获取<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ran1=[<span class="string">'胡辣汤'</span>,<span class="string">'豆腐脑'</span>,<span class="string">'油条'</span>,<span class="string">'煎饼果子'</span>,<span class="string">'鸡蛋饼'</span>]</span><br><span class="line">random.shuffle(ran1)</span><br><span class="line"><span class="built_in">print</span>(ran1[0])</span><br></pre></td></tr></table></figure></p>
+<p>random.randrange([start,]stop[,step])<br>    从指定范围内,按指定的基数递增的集合中选取一个随机数<br>    start–指定范围的开始值，包含在范围内<br>    stop–指定范围的结束值，不包含在范围内<br>    step–指定的递增基数<br>random.randint()<br>    随机返回一个整数，包含开始值和结束值<br>random.uniform()<br>    随机生成下一个实数（小数），它在[x,y]范围内，包含边界值<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(random.randrange(100))	 <span class="comment">#[0,100)</span></span><br><span class="line"><span class="built_in">print</span>(random.randrange(1,100,2))</span><br><span class="line"><span class="built_in">print</span>(random.randint(5,7))</span><br><span class="line"><span class="built_in">print</span>(random.uniform(1,10))</span><br></pre></td></tr></table></figure></p>
+<p>repr()<br>    原型打印内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str1=<span class="string">'hello world'</span></span><br><span class="line"><span class="built_in">print</span>(str1)     	<span class="comment">#hello wworld</span></span><br><span class="line"><span class="built_in">print</span>(repr(str1))   <span class="comment">#'hello wworld'</span></span><br></pre></td></tr></table></figure></p>
+<p>eval()<br>    把字符串当做py代码执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str1=<span class="string">'hello world'</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">eval</span>(repr(str1)))   <span class="comment">#hello world</span></span><br></pre></td></tr></table></figure></p>
+<p>locals()<br>    表示当前环境中的所有变量，如果在函数中，稚嫩获取函数中的变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def one():</span><br><span class="line">    a=<span class="string">'123'</span></span><br><span class="line">    b=<span class="string">'456'</span></span><br><span class="line">    <span class="built_in">print</span>(locals())</span><br><span class="line">one()					<span class="comment">#&#123;'b': '456', 'a': '123'&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>类型相关函数: int,float,bool,str,list,tuple,set,dict,complex<br>变量相关: type,id,print<br>数学函数: abs，round，sum,min,max,pow,range,repr,eval,locals<br>进制: bin,oct,hex,ord,chr</p>
+<h2 id="其他函数"><a href="#其他函数" class="headerlink" title="其他函数"></a>其他函数</h2><p>import operator<br>operator.ge()       大于等于<br>operator.le()       小于等于<br>operator.ne()       不等于<br>operator.eq()       等于<br>operator.gt()       大于<br>operator.lt()       小于<br>格式：operator.ge(列表1,列表2)。<br>功能：对两个列表进行比较，若第一个列表大于第二个，则结果为True，否则返回False<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">list1=[123,<span class="string">'xyz'</span>]</span><br><span class="line">list2=[123,<span class="string">'abc'</span>]</span><br><span class="line"><span class="built_in">print</span>(operator.ge(list1, list2))		<span class="comment">#True</span></span><br><span class="line"><span class="built_in">print</span>(operator.gt(list1, list2))		<span class="comment">#True</span></span><br><span class="line"><span class="built_in">print</span>(operator.eq(list1, list2))		<span class="comment">#False</span></span><br></pre></td></tr></table></figure></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/Python_06/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_05/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.751Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/07/19/Python_07/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python基础7——列表、元组、字典、集合的相关操作
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/07/19/Python_05/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python基础5——字符串操作</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_05/">Python基础5——字符串操作</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_04/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.750Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_04/">Python基础4——高级特性</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_03/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.749Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_03/">Python基础3——控制语句</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_02/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_02/">Python基础2——运算和运算符</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/Python_01/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.746Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/Python_01/">Python基础1——数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-14T10:13:24.011Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -425,8 +347,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
