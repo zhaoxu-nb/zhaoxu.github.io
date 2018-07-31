@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python基础6——数学函数的相关操作 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="往里走，看一看啊">
+  <meta name="description" content="简介">
 <meta name="keywords" content="hello">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础6——数学函数的相关操作">
 <meta property="og:url" content="http://yoursite.com/2018/07/19/Python_06/index.html">
 <meta property="og:site_name" content="九日的个人博客">
-<meta property="og:description" content="往里走，看一看啊">
+<meta property="og:description" content="简介">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T09:02:46.093Z">
+<meta property="og:updated_time" content="2018-07-31T11:47:51.477Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python基础6——数学函数的相关操作">
-<meta name="twitter:description" content="往里走，看一看啊">
+<meta name="twitter:description" content="简介">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -175,7 +175,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>往里走，看一看啊<br><a id="more"></a></p>
+        <p>简介<br><a id="more"></a></p>
 <h2 id="字符串模块操作"><a href="#字符串模块操作" class="headerlink" title="字符串模块操作"></a>字符串模块操作</h2><p>什么是模块？<br>    Python 模块(Module)，是一个 Python 文件，以 .py 结尾，包含了 Python 对象定义和Python语句。<br>    模块让你能够有逻辑地组织你的 Python 代码段。<br>    把相关的代码分配到一个模块里能让你的代码更好用，更易懂。<br>    模块能定义函数，类和变量，模块里也能包含可执行的代码。<br>模块的引入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import keyword</span><br><span class="line">import string</span><br></pre></td></tr></table></figure></p>
 <p>ASCII编码的转换<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(chr(97))		<span class="comment">#A  将数字转换为对应的ASCII码值</span></span><br><span class="line"><span class="built_in">print</span>(ord(<span class="string">'A'</span>))		<span class="comment">#65 将ASCII码值转为对应的数字</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="数学模块math"><a href="#数学模块math" class="headerlink" title="数学模块math"></a>数学模块math</h2><p>python中的数学模块需要导入<br>导入模块：import math<br>数学模块分为三个模块：数学函数，随机数函数，三角函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import math</span><br><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))		<span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))		<span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))		<span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))		<span class="comment">#18</span></span><br><span class="line"><span class="comment">#返回小数部分与整数部分</span></span><br><span class="line"><span class="built_in">print</span>(math.modf(22.3))		<span class="comment">#(0.3000000000000007, 22.0)</span></span><br><span class="line"><span class="comment">#开方</span></span><br><span class="line"><span class="built_in">print</span>(math.sqrt(9))			<span class="comment">#3.0</span></span><br><span class="line"><span class="comment">#获取e的x次幂</span></span><br><span class="line"><span class="built_in">print</span>(math.exp(3))			<span class="comment">#20.085536923187668</span></span><br><span class="line"><span class="comment">#获取绝对值的浮点数</span></span><br><span class="line"><span class="built_in">print</span>(math.fabs(-5))		<span class="comment">#5</span></span><br><span class="line"><span class="comment">#获取常量π</span></span><br><span class="line"><span class="built_in">print</span>(math.pi)				<span class="comment">#3.141592653589793</span></span><br><span class="line"><span class="comment">#获取常量e</span></span><br><span class="line"><span class="built_in">print</span>(math.e)				<span class="comment">#2.718281828459045</span></span><br></pre></td></tr></table></figure></p>

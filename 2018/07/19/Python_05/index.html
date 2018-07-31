@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python基础5——字符串操作 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="往里走，看一看啊">
+  <meta name="description" content="简介">
 <meta name="keywords" content="hello">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础5——字符串操作">
 <meta property="og:url" content="http://yoursite.com/2018/07/19/Python_05/index.html">
 <meta property="og:site_name" content="九日的个人博客">
-<meta property="og:description" content="往里走，看一看啊">
+<meta property="og:description" content="简介">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T09:02:51.316Z">
+<meta property="og:updated_time" content="2018-07-31T11:47:58.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python基础5——字符串操作">
-<meta name="twitter:description" content="往里走，看一看啊">
+<meta name="twitter:description" content="简介">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -175,7 +175,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>往里走，看一看啊<br><a id="more"></a></p>
+        <p>简介<br><a id="more"></a></p>
 <h2 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h2><p>查看字符串的所有函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">''</span></span><br><span class="line"><span class="built_in">print</span>(dir(str))</span><br></pre></td></tr></table></figure></p>
 <h3 id="字符串的大小写转换"><a href="#字符串的大小写转换" class="headerlink" title="字符串的大小写转换"></a>字符串的大小写转换</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">"asda a34ad fdFsdf AAAsd"</span></span><br><span class="line"><span class="comment"># 将字符串的第一个字母变成大写,其他字母变小写</span></span><br><span class="line"><span class="built_in">print</span>(str.capitalize())		<span class="comment">#Asda a34 ad fdfsdf aaasd</span></span><br><span class="line"><span class="comment"># 所有单词都是以大写开始，其余字母均为小写</span></span><br><span class="line"><span class="built_in">print</span>(str.title())		<span class="comment">#Asda A34 Ad Fdfsdf Aaasd</span></span><br><span class="line"><span class="comment"># 将字符串中的小写字母转为大写字母</span></span><br><span class="line"><span class="built_in">print</span>(str.upper())		<span class="comment">#ASDA A34 AD FDFSDF AAASD</span></span><br><span class="line"><span class="comment"># 字符串中所有大写字符为小写</span></span><br><span class="line"><span class="built_in">print</span>(str.lower())		<span class="comment">#asda a34 ad fdfsdf aaasd</span></span><br><span class="line"><span class="comment"># 对字符串的大小写字母进行转换</span></span><br><span class="line"><span class="built_in">print</span>(str.swapcase())		<span class="comment">#ASDA A34 AD FDfSDF aaaSD</span></span><br></pre></td></tr></table></figure>
 <h3 id="字符串的内容查找"><a href="#字符串的内容查找" class="headerlink" title="字符串的内容查找"></a>字符串的内容查找</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">"asda a34ad fdFsdf AAAsd"</span></span><br><span class="line"><span class="comment"># 计算字符串长度</span></span><br><span class="line"><span class="built_in">print</span>(len(str))		<span class="comment">#24</span></span><br><span class="line"><span class="comment"># 计算指定字符串出现的次数</span></span><br><span class="line"><span class="built_in">print</span>(str.count(<span class="string">'a'</span>, 0, 6))		<span class="comment">#3</span></span><br><span class="line"><span class="comment"># 查找指定字符串第一次出现的位置，找不到返回-1</span></span><br><span class="line"><span class="built_in">print</span>(str.find(<span class="string">'sd'</span>, 0, 9))		<span class="comment">#1</span></span><br><span class="line"><span class="comment"># 跟find()方法一样，只不过如果str不在 string中会报一个异常（str找不到）</span></span><br><span class="line"><span class="built_in">print</span>(str.index(<span class="string">'sd'</span>, 0, 9))	<span class="comment">#1</span></span><br><span class="line"><span class="comment"># 检测字符串是否以指定的字符串开头</span></span><br><span class="line"><span class="built_in">print</span>(str.startswith(<span class="string">'as'</span>))		<span class="comment">#True</span></span><br><span class="line"><span class="comment"># 检测字符串是否以指定的字符串结尾</span></span><br><span class="line"><span class="built_in">print</span>(str.endswith(<span class="string">'sb'</span>))		<span class="comment">#False</span></span><br></pre></td></tr></table></figure>
