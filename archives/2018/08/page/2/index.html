@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python基础2——运算和运算符 | 九日的个人博客</title>
+  <title>Archives: 2018/8 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介">
-<meta name="keywords" content="hello">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Python基础2——运算和运算符">
-<meta property="og:url" content="http://yoursite.com/2018/07/19/Python_02/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="九日的个人博客">
+<meta property="og:url" content="http://yoursite.com/archives/2018/08/page/2/index.html">
 <meta property="og:site_name" content="九日的个人博客">
-<meta property="og:description" content="简介">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-31T11:48:02.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python基础2——运算和运算符">
-<meta name="twitter:description" content="简介">
+<meta name="twitter:title" content="九日的个人博客">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -155,199 +150,63 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python_02" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Python基础2——运算和运算符
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/08/03/Python_08/" class="archive-article-date">
+  	<time datetime="2018-08-03T13:10:54.739Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/08/03/Python_08/">Python基础8——元组、字典的相关操作</a>
     </h1>
   
 
-        
-        <a href="/2018/07/19/Python_02/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>简介<br><a id="more"></a></p>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>&#43;   &#45;  &#42;   &#47;  %（取模）  **（求幂）  //（取整)</p>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==   !=  &lt;&gt;  &gt;   &lt;    &gt;=   &lt;= </p>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>=  +=  -=  *=  /=  %=  **=  //=</p>
-<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>&amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)<br>~(按位取反运算符)  &lt;&lt;(左移动运算符)  &gt;&gt;(右移动运算符)</p>
-<h3 id="逻辑与-and"><a href="#逻辑与-and" class="headerlink" title="逻辑与  and"></a>逻辑与  and</h3><p>逻辑与运算表达式：表达式1 and 表达式2<br>【有一个为假就为假】</p>
-<h3 id="逻辑或-or"><a href="#逻辑或-or" class="headerlink" title="逻辑或  or"></a>逻辑或  or</h3><p>逻辑或运算表达式：表达式1  or  表达式2<br>【有一个为真就为真】</p>
-<h3 id="逻辑非：-not"><a href="#逻辑非：-not" class="headerlink" title="逻辑非： not"></a>逻辑非： not</h3><p>逻辑非运算表达式： not 表达式</p>
-<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><p>in：如果在指定的序列中找到值返回True，否则返回False<br>not in：如果在指定的序列中没有找到值返回True，否则返回False</p>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>is：判断两个标识符是不是引用同一个对象<br>is not：判断两个标识符是不是引用不同一个对象</p>
-<h2 id="获取变量类型-type（）"><a href="#获取变量类型-type（）" class="headerlink" title="获取变量类型  type（）"></a>获取变量类型  type（）</h2><p>isinstance() 函数来判断一个对象是否是一个已知的类型<br>语法：isinstance(object, classinfo)   判断object是否是classinfo类型，是的话返回True，否的话返回False<br>    object – 实例对象。<br>    classinfo – 可以是直接或间接类名、基本类型或者由它们组成的元组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list1=[<span class="string">'hello'</span>,100,45,78,10,[<span class="string">'one'</span>,<span class="string">'two'</span>]]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i,int):</span><br><span class="line">        <span class="keyword">if</span> i%2==0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个偶数'</span>%i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个奇数'</span>%i)</span><br></pre></td></tr></table></figure></p>
-<h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>库：封装一些功能<br>math：数学相关的库<br>random: 随机数<br>import math<br>import random<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))  <span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))  <span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))  <span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))  <span class="comment">#18</span></span><br><span class="line"><span class="comment">#随机生成【0，1）之间的数（浮点数）</span></span><br><span class="line"><span class="built_in">print</span>(random.random())</span><br><span class="line"><span class="comment">#从0-99选取一个随机数</span></span><br><span class="line"><span class="built_in">print</span>(random.randrange(100))</span><br><span class="line"><span class="comment">#19-180的随机数</span></span><br><span class="line">import random</span><br><span class="line"><span class="built_in">print</span>(random.randrange(19,180))</span><br><span class="line"><span class="comment">#输出1-10的和</span></span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    sum += i</span><br><span class="line">    <span class="keyword">if</span>  i == 10:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"10 = "</span>,end = <span class="string">""</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">" + "</span>)</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"><span class="comment">#  1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span></span><br></pre></td></tr></table></figure></p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hello</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tuple、dict</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/Python_02/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/07/19/Python_03/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python基础3——控制语句
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/07/19/Python_01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python基础1——数据类型</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#运算符"><span class="toc-number">1.</span> <span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#算术运算符"><span class="toc-number">1.1.</span> <span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较运算符"><span class="toc-number">1.2.</span> <span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#赋值运算符"><span class="toc-number">1.3.</span> <span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算符"><span class="toc-number">1.4.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑与-and"><span class="toc-number">1.5.</span> <span class="toc-text">逻辑与  and</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑或-or"><span class="toc-number">1.6.</span> <span class="toc-text">逻辑或  or</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑非：-not"><span class="toc-number">1.7.</span> <span class="toc-text">逻辑非： not</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#成员运算符"><span class="toc-number">1.8.</span> <span class="toc-text">成员运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#身份运算符"><span class="toc-number">1.9.</span> <span class="toc-text">身份运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取变量类型-type（）"><span class="toc-number">2.</span> <span class="toc-text">获取变量类型  type（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入库"><span class="toc-number">3.</span> <span class="toc-text">导入库</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2018/08/">&laquo; Prev</a><a class="page-number" href="/archives/2018/08/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -371,8 +230,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

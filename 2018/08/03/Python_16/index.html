@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python基础2——运算和运算符 | 九日的个人博客</title>
+  <title>Python基础16——模块和包 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介">
-<meta name="keywords" content="hello">
+  <meta name="description" content="模块什么是模块模块是包括 Python 定义和声明的文件。文件名就是模块名加上 .py 后缀。模块的模块名（做为一个字符串）可以由全局变量 name 得到。使用模块的优点：    提高了代码的可维护     提高了代码的可重用性     避免了函数名和变量名冲突">
+<meta name="keywords" content="模块、包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python基础2——运算和运算符">
-<meta property="og:url" content="http://yoursite.com/2018/07/19/Python_02/index.html">
+<meta property="og:title" content="Python基础16——模块和包">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/Python_16/index.html">
 <meta property="og:site_name" content="九日的个人博客">
-<meta property="og:description" content="简介">
+<meta property="og:description" content="模块什么是模块模块是包括 Python 定义和声明的文件。文件名就是模块名加上 .py 后缀。模块的模块名（做为一个字符串）可以由全局变量 name 得到。使用模块的优点：    提高了代码的可维护     提高了代码的可重用性     避免了函数名和变量名冲突">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-31T11:48:02.843Z">
+<meta property="og:updated_time" content="2018-08-03T09:54:45.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python基础2——运算和运算符">
-<meta name="twitter:description" content="简介">
+<meta name="twitter:title" content="Python基础16——模块和包">
+<meta name="twitter:description" content="模块什么是模块模块是包括 Python 定义和声明的文件。文件名就是模块名加上 .py 后缀。模块的模块名（做为一个字符串）可以由全局变量 name 得到。使用模块的优点：    提高了代码的可维护     提高了代码的可重用性     避免了函数名和变量名冲突">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -155,38 +155,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python_02" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python_16" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python基础2——运算和运算符
+      Python基础16——模块和包
     </h1>
   
 
         
-        <a href="/2018/07/19/Python_02/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
+        <a href="/2018/08/03/Python_16/" class="archive-article-date">
+  	<time datetime="2018-08-03T13:10:54.755Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>简介<br><a id="more"></a></p>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>&#43;   &#45;  &#42;   &#47;  %（取模）  **（求幂）  //（取整)</p>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==   !=  &lt;&gt;  &gt;   &lt;    &gt;=   &lt;= </p>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>=  +=  -=  *=  /=  %=  **=  //=</p>
-<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>&amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)<br>~(按位取反运算符)  &lt;&lt;(左移动运算符)  &gt;&gt;(右移动运算符)</p>
-<h3 id="逻辑与-and"><a href="#逻辑与-and" class="headerlink" title="逻辑与  and"></a>逻辑与  and</h3><p>逻辑与运算表达式：表达式1 and 表达式2<br>【有一个为假就为假】</p>
-<h3 id="逻辑或-or"><a href="#逻辑或-or" class="headerlink" title="逻辑或  or"></a>逻辑或  or</h3><p>逻辑或运算表达式：表达式1  or  表达式2<br>【有一个为真就为真】</p>
-<h3 id="逻辑非：-not"><a href="#逻辑非：-not" class="headerlink" title="逻辑非： not"></a>逻辑非： not</h3><p>逻辑非运算表达式： not 表达式</p>
-<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><p>in：如果在指定的序列中找到值返回True，否则返回False<br>not in：如果在指定的序列中没有找到值返回True，否则返回False</p>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>is：判断两个标识符是不是引用同一个对象<br>is not：判断两个标识符是不是引用不同一个对象</p>
-<h2 id="获取变量类型-type（）"><a href="#获取变量类型-type（）" class="headerlink" title="获取变量类型  type（）"></a>获取变量类型  type（）</h2><p>isinstance() 函数来判断一个对象是否是一个已知的类型<br>语法：isinstance(object, classinfo)   判断object是否是classinfo类型，是的话返回True，否的话返回False<br>    object – 实例对象。<br>    classinfo – 可以是直接或间接类名、基本类型或者由它们组成的元组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list1=[<span class="string">'hello'</span>,100,45,78,10,[<span class="string">'one'</span>,<span class="string">'two'</span>]]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i,int):</span><br><span class="line">        <span class="keyword">if</span> i%2==0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个偶数'</span>%i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个奇数'</span>%i)</span><br></pre></td></tr></table></figure></p>
-<h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>库：封装一些功能<br>math：数学相关的库<br>random: 随机数<br>import math<br>import random<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))  <span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))  <span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))  <span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))  <span class="comment">#18</span></span><br><span class="line"><span class="comment">#随机生成【0，1）之间的数（浮点数）</span></span><br><span class="line"><span class="built_in">print</span>(random.random())</span><br><span class="line"><span class="comment">#从0-99选取一个随机数</span></span><br><span class="line"><span class="built_in">print</span>(random.randrange(100))</span><br><span class="line"><span class="comment">#19-180的随机数</span></span><br><span class="line">import random</span><br><span class="line"><span class="built_in">print</span>(random.randrange(19,180))</span><br><span class="line"><span class="comment">#输出1-10的和</span></span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    sum += i</span><br><span class="line">    <span class="keyword">if</span>  i == 10:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"10 = "</span>,end = <span class="string">""</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">" + "</span>)</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"><span class="comment">#  1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><h3 id="什么是模块"><a href="#什么是模块" class="headerlink" title="什么是模块"></a>什么是模块</h3><p>模块是包括 Python 定义和声明的文件。<br>文件名就是模块名加上 .py 后缀。<br>模块的模块名（做为一个字符串）可以由全局变量 <strong>name</strong> 得到。<br>使用模块的优点：<br>    提高了代码的可维护<br>     提高了代码的可重用性<br>     避免了函数名和变量名冲突<br><a id="more"></a></p>
+<h3 id="模块的载入"><a href="#模块的载入" class="headerlink" title="模块的载入"></a>模块的载入</h3><p>模块可以包含可执行的语句和函数的定义，这些语句的目的是初始化模块，它们只在模块名第一次遇到导入import语句时才执行。<br>import语句是可以在程序中的任意位置使用的，如果针对同一个模块import多次，为了防止你重复导入，只有第一次导入后就将模块名加载到内存了。<br>后续的import语句仅是对已经加载到内存中的模块对象增加了一次引用，不会重新执行模块内的语句。<br>导入一个模块，相当于这个模块从上到下依次被执行了，同一个模块不会被多次导入<br>利用from…import…可以引入模块的某些方法，但是调用模块的方法时不需要加上前面的模块名，当引入不同模块的相同方法名时，以最后引入的方法为准。<br><strong>all</strong>  在模块中使用<strong>all</strong>方法，在使用&#42;引入模块的时候，在<strong>all</strong> 定义的有谁，就只能调用谁；但是import sendmsg as sen的方法不受影响<br>if <strong>name</strong> == ‘<strong>main</strong>‘：<br>当一个模块被当做脚本执行的时候，<strong>name</strong>是一个字符串数据类型的’<strong>main</strong>‘<br>当一个模块被当做模块导入的时候，<strong>name</strong>是一个字符串数据类型模块名<br>if <strong>name</strong> == ‘<strong>main</strong>‘:控制了:<br>    只要当前这个文件直接被执行，就会执行if条件语句内的代码<br>    否则，就不会执行if条件语句内的代码</p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>.\python\lesson01.py<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def fib1(n):</span><br><span class="line">    a,b = 0,1</span><br><span class="line">    <span class="keyword">while</span> b &lt; n:</span><br><span class="line">        <span class="built_in">print</span>(b,end = <span class="string">' '</span>)</span><br><span class="line">        a,b = b,a+b</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    fib1(10)</span><br></pre></td></tr></table></figure></p>
+<p>.\python\lesson02.py<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#__all__ = ['fib1']  # __all__ 后面的列表里可以写函数名，使用 from lesson02 import * 调用此模块时</span></span><br><span class="line">def fib2(n):		<span class="comment"># 只能调用[]里的函数。</span></span><br><span class="line">    a,b = 0,1</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">while</span> b &lt; n:</span><br><span class="line">        list1.append(b)</span><br><span class="line">        a,b = b,a+b</span><br><span class="line">    <span class="built_in">print</span>(list1)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    fib2(10)</span><br></pre></td></tr></table></figure></p>
+<p>.\python\main.py<br>对模块进行操作(同目录下)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import lesson01,lesson02</span><br><span class="line">lesson01.fib1(10)	<span class="comment">#1 1 2 3 5 8</span></span><br><span class="line">lesson02.fib2(10)	<span class="comment">#[1, 1, 2, 3, 5, 8]</span></span><br><span class="line"></span><br><span class="line">from lesson01 import fib1</span><br><span class="line"><span class="comment">#from lesson01 import *  (一个模块中如果存在多个函数，使用 * 可以全部调用)</span></span><br><span class="line">from lesson02 import fib2</span><br><span class="line">fib1(10)	<span class="comment">#1 1 2 3 5 8</span></span><br><span class="line">fib2(10)	<span class="comment">#[1, 1, 2, 3, 5, 8]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#模块名起别名:使用了别名，之前的模块名就不能使用了</span></span><br><span class="line">import lesson01 as fib</span><br><span class="line">fib.fib1(10)	<span class="comment">#1 1 2 3 5 8</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="包的调用"><a href="#包的调用" class="headerlink" title="包的调用"></a>包的调用</h2><p>先将lesson01.py模块和lesson02.py模块放入.\python\pack文件夹里,pack文件夹就相当于一个包<br>需要再pack文件夹里新建一个<strong>init</strong>.py的文件(文件名字固定)<br>.\python\pack__init__.py<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">__all__ = [<span class="string">'lesson01'</span>,<span class="string">'lesson02'</span>]</span><br><span class="line">from . import lesson01</span><br><span class="line">from . import lesson02</span><br></pre></td></tr></table></figure></p>
+<p>然后在主函数.python\main.py里调用包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#第一种方法</span></span><br><span class="line">import pack</span><br><span class="line">pack.lesson01.fib1(10)		<span class="comment">#1 1 2 3 5 8</span></span><br><span class="line">pack.lesson02.fib2(10)		<span class="comment">#[1, 1, 2, 3, 5, 8]</span></span><br><span class="line"><span class="comment">#第二种方法</span></span><br><span class="line">from pack import lesson01,lesson02</span><br><span class="line">lesson01.fib1(10)	<span class="comment">#1 1 2 3 5 8</span></span><br><span class="line">lesson02.fib2(10)	<span class="comment">#[1, 1, 2, 3, 5, 8]</span></span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -221,7 +216,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hello</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">模块、包</a>
         		</li>
       		
 		</ul>
@@ -277,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/Python_02/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/Python_16/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -291,18 +286,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/19/Python_03/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/03/Python_15/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Python基础3——控制语句
+          Python基础15——时间、日历、日期模块
         
       </div>
     </a>
   
   
-    <a href="/2018/07/19/Python_01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python基础1——数据类型</div>
+    <a href="/2018/08/03/Python_14/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python基础14——I/O文件操作</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -329,7 +324,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#运算符"><span class="toc-number">1.</span> <span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#算术运算符"><span class="toc-number">1.1.</span> <span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较运算符"><span class="toc-number">1.2.</span> <span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#赋值运算符"><span class="toc-number">1.3.</span> <span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算符"><span class="toc-number">1.4.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑与-and"><span class="toc-number">1.5.</span> <span class="toc-text">逻辑与  and</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑或-or"><span class="toc-number">1.6.</span> <span class="toc-text">逻辑或  or</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑非：-not"><span class="toc-number">1.7.</span> <span class="toc-text">逻辑非： not</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#成员运算符"><span class="toc-number">1.8.</span> <span class="toc-text">成员运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#身份运算符"><span class="toc-number">1.9.</span> <span class="toc-text">身份运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取变量类型-type（）"><span class="toc-number">2.</span> <span class="toc-text">获取变量类型  type（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入库"><span class="toc-number">3.</span> <span class="toc-text">导入库</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模块"><span class="toc-number">1.</span> <span class="toc-text">模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是模块"><span class="toc-number">1.1.</span> <span class="toc-text">什么是模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模块的载入"><span class="toc-number">1.2.</span> <span class="toc-text">模块的载入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例"><span class="toc-number">1.3.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#包的调用"><span class="toc-number">2.</span> <span class="toc-text">包的调用</span></a></li></ol>
                     </div>
                 </span>
             </div>

@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python基础2——运算和运算符 | 九日的个人博客</title>
+  <title>Python基础15——时间、日历、日期模块 | 九日的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介">
-<meta name="keywords" content="hello">
+  <meta name="description" content="time引用时间模块import time 时间模块的值123456789#timezone 当前时区与格林尼治时间相差的秒数t1 = time.timezoneprint(t1)	#-28800#altzone  在有夏令营的情况下，获取当前时区与格林尼治的时间差t2 = time.altzoneprint(t2)	#-32400#dayligth  检测是否为夏令时状态t3 = time.da">
+<meta name="keywords" content="time">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python基础2——运算和运算符">
-<meta property="og:url" content="http://yoursite.com/2018/07/19/Python_02/index.html">
+<meta property="og:title" content="Python基础15——时间、日历、日期模块">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/Python_15/index.html">
 <meta property="og:site_name" content="九日的个人博客">
-<meta property="og:description" content="简介">
+<meta property="og:description" content="time引用时间模块import time 时间模块的值123456789#timezone 当前时区与格林尼治时间相差的秒数t1 = time.timezoneprint(t1)	#-28800#altzone  在有夏令营的情况下，获取当前时区与格林尼治的时间差t2 = time.altzoneprint(t2)	#-32400#dayligth  检测是否为夏令时状态t3 = time.da">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-31T11:48:02.843Z">
+<meta property="og:updated_time" content="2018-08-02T10:48:22.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python基础2——运算和运算符">
-<meta name="twitter:description" content="简介">
+<meta name="twitter:title" content="Python基础15——时间、日历、日期模块">
+<meta name="twitter:description" content="time引用时间模块import time 时间模块的值123456789#timezone 当前时区与格林尼治时间相差的秒数t1 = time.timezoneprint(t1)	#-28800#altzone  在有夏令营的情况下，获取当前时区与格林尼治的时间差t2 = time.altzoneprint(t2)	#-32400#dayligth  检测是否为夏令时状态t3 = time.da">
   
     <link rel="alternative" href="/atom.xml" title="九日的个人博客" type="application/atom+xml">
   
@@ -155,39 +155,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python_02" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python_15" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python基础2——运算和运算符
+      Python基础15——时间、日历、日期模块
     </h1>
   
 
         
-        <a href="/2018/07/19/Python_02/" class="archive-article-date">
-  	<time datetime="2018-07-19T12:38:14.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
+        <a href="/2018/08/03/Python_15/" class="archive-article-date">
+  	<time datetime="2018-08-03T13:10:54.755Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>简介<br><a id="more"></a></p>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>&#43;   &#45;  &#42;   &#47;  %（取模）  **（求幂）  //（取整)</p>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==   !=  &lt;&gt;  &gt;   &lt;    &gt;=   &lt;= </p>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>=  +=  -=  *=  /=  %=  **=  //=</p>
-<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>&amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)<br>~(按位取反运算符)  &lt;&lt;(左移动运算符)  &gt;&gt;(右移动运算符)</p>
-<h3 id="逻辑与-and"><a href="#逻辑与-and" class="headerlink" title="逻辑与  and"></a>逻辑与  and</h3><p>逻辑与运算表达式：表达式1 and 表达式2<br>【有一个为假就为假】</p>
-<h3 id="逻辑或-or"><a href="#逻辑或-or" class="headerlink" title="逻辑或  or"></a>逻辑或  or</h3><p>逻辑或运算表达式：表达式1  or  表达式2<br>【有一个为真就为真】</p>
-<h3 id="逻辑非：-not"><a href="#逻辑非：-not" class="headerlink" title="逻辑非： not"></a>逻辑非： not</h3><p>逻辑非运算表达式： not 表达式</p>
-<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><p>in：如果在指定的序列中找到值返回True，否则返回False<br>not in：如果在指定的序列中没有找到值返回True，否则返回False</p>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>is：判断两个标识符是不是引用同一个对象<br>is not：判断两个标识符是不是引用不同一个对象</p>
-<h2 id="获取变量类型-type（）"><a href="#获取变量类型-type（）" class="headerlink" title="获取变量类型  type（）"></a>获取变量类型  type（）</h2><p>isinstance() 函数来判断一个对象是否是一个已知的类型<br>语法：isinstance(object, classinfo)   判断object是否是classinfo类型，是的话返回True，否的话返回False<br>    object – 实例对象。<br>    classinfo – 可以是直接或间接类名、基本类型或者由它们组成的元组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list1=[<span class="string">'hello'</span>,100,45,78,10,[<span class="string">'one'</span>,<span class="string">'two'</span>]]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i,int):</span><br><span class="line">        <span class="keyword">if</span> i%2==0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个偶数'</span>%i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个奇数'</span>%i)</span><br></pre></td></tr></table></figure></p>
-<h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>库：封装一些功能<br>math：数学相关的库<br>random: 随机数<br>import math<br>import random<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))  <span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))  <span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))  <span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))  <span class="comment">#18</span></span><br><span class="line"><span class="comment">#随机生成【0，1）之间的数（浮点数）</span></span><br><span class="line"><span class="built_in">print</span>(random.random())</span><br><span class="line"><span class="comment">#从0-99选取一个随机数</span></span><br><span class="line"><span class="built_in">print</span>(random.randrange(100))</span><br><span class="line"><span class="comment">#19-180的随机数</span></span><br><span class="line">import random</span><br><span class="line"><span class="built_in">print</span>(random.randrange(19,180))</span><br><span class="line"><span class="comment">#输出1-10的和</span></span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    sum += i</span><br><span class="line">    <span class="keyword">if</span>  i == 10:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"10 = "</span>,end = <span class="string">""</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">" + "</span>)</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"><span class="comment">#  1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span></span><br></pre></td></tr></table></figure></p>
-
+        <h2 id="time"><a href="#time" class="headerlink" title="time"></a>time</h2><p>引用时间模块<br>import time</p>
+<h3 id="时间模块的值"><a href="#时间模块的值" class="headerlink" title="时间模块的值"></a>时间模块的值</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#timezone 当前时区与格林尼治时间相差的秒数</span></span><br><span class="line">t1 = time.timezone</span><br><span class="line"><span class="built_in">print</span>(t1)	<span class="comment">#-28800</span></span><br><span class="line"><span class="comment">#altzone  在有夏令营的情况下，获取当前时区与格林尼治的时间差</span></span><br><span class="line">t2 = time.altzone</span><br><span class="line"><span class="built_in">print</span>(t2)	<span class="comment">#-32400</span></span><br><span class="line"><span class="comment">#dayligth  检测是否为夏令时状态</span></span><br><span class="line">t3 = time.daylight</span><br><span class="line"><span class="built_in">print</span>(t3)	<span class="comment">#0</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="时间模块的函数"><a href="#时间模块的函数" class="headerlink" title="时间模块的函数"></a>时间模块的函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#asctime()	返回一个正常可读的当前时间字符串</span></span><br><span class="line">t1 = time.asctime()</span><br><span class="line"><span class="built_in">print</span>(t1)	<span class="comment">#Thu Aug  2 12:52:57 2018</span></span><br><span class="line"><span class="comment">#localtime()	获得当前日期元组+8</span></span><br><span class="line">t2 = time.localtime()</span><br><span class="line"><span class="built_in">print</span>(t2)	<span class="comment">#time.struct_time(tm_year=2018, tm_mon=8, tm_mday=2, tm_hour=12, tm_min=51, tm_sec=27, tm_wday=3, tm_yday=214, tm_isdst=0)</span></span><br><span class="line"><span class="comment">#gmtime()	获得当前日期元组-8</span></span><br><span class="line">t3 = time.gmtime()</span><br><span class="line"><span class="built_in">print</span>(t3)	<span class="comment">#time.struct_time(tm_year=2018, tm_mon=8, tm_mday=2, tm_hour=4, tm_min=51, tm_sec=27, tm_wday=3, tm_yday=214, tm_isdst=0)</span></span><br><span class="line"><span class="comment">#ctime() 获取本地时间的字符串格式= asctime(localtime)</span></span><br><span class="line">t4 = time.ctime()</span><br><span class="line"><span class="built_in">print</span>(t4)	<span class="comment">#Thu Aug  2 12:52:57 2018</span></span><br><span class="line"><span class="comment">#mktime(tuple)	使用时间元组制作时间戳</span></span><br><span class="line">t5 = time.mktime(t2)</span><br><span class="line"><span class="built_in">print</span>(t5)	<span class="comment">#1533185711.0</span></span><br><span class="line"><span class="comment">#sleep()	程序睡眠，使程序在此处等待指定的时间</span></span><br><span class="line"><span class="comment">#clock()	第一次调用，返回的是进程运行的实际时间。而第二次之后的调用是自第一次调用以后到现在的运行时间。</span></span><br><span class="line">t6 = time.clock()</span><br><span class="line"><span class="built_in">print</span>(t6)	<span class="comment">#0.0</span></span><br><span class="line">time.sleep(5)	<span class="comment">#睡眠5秒</span></span><br><span class="line">t7 = time.clock()</span><br><span class="line"><span class="built_in">print</span>(t7)	<span class="comment">#4.999745279782639</span></span><br><span class="line"><span class="comment">#strftime()	  想要什么格式就输出什么格式</span></span><br><span class="line">t8 = time.strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>)</span><br><span class="line"><span class="built_in">print</span>(t8)</span><br><span class="line"><span class="comment">#strptime(string[, format])	  根据指定的格式把一个时间字符串解析为时间元组。</span></span><br><span class="line">t9 = time.strptime(<span class="string">'2018-8-8'</span>,<span class="string">'%Y-%m-%d'</span>)</span><br><span class="line"><span class="built_in">print</span>(t9)	<span class="comment">#time.struct_time(tm_year=2018, tm_mon=8, tm_mday=8, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=2, tm_yday=220, tm_isdst=-1)</span></span><br></pre></td></tr></table></figure>
+<h3 id="python中时间日期格式化符号"><a href="#python中时间日期格式化符号" class="headerlink" title="python中时间日期格式化符号"></a>python中时间日期格式化符号</h3><p>%a  本地(locale)简化星期名称<br>%A  本地完整星期名称<br>%b  本地简化月份名称<br>%B  本地完整月份名称<br>%c  本地相应的日期和时间表示<br>%d  一个月中的第几天（01 - 31）<br>%H  一天中的第几个小时（24小时制，00 - 23）<br>%I  一天中的第几个小时（12小时制，00 - 12）<br>%j  一年中的第几天（001 - 366）<br>%m  月份（01 - 12）<br>%M  分钟数（00 - 59）<br>%p  本地am或者pm的相应符<br>%S  秒（01 - 61）<br>%U  一年中的星期数。（00 - 53星期天是一个星期的开始）<br>%w  一个星期中的第几天（0 - 6，0是星期天）<br>%W  和%U基本相同，不同的是%W以星期一为一个星期的开始<br>%x  本地相应日期<br>%X  本地相应时间<br>%y  去掉世纪的年份（00 - 99）<br>%Y  完整的年份<br>%Z  时区的名字（如果不存在为空字符）<br>%%  ‘%’字符</p>
+<h2 id="datatime"><a href="#datatime" class="headerlink" title="datatime"></a>datatime</h2><p>import datetime<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#today()	获取今天的日期</span></span><br><span class="line"><span class="built_in">print</span>(datetime.datetime.today())</span><br><span class="line"><span class="comment">#now([tz])	获得当前时间</span></span><br><span class="line"><span class="built_in">print</span>(datetime.datetime.now())</span><br><span class="line"><span class="comment">#datetime.utcnow()	返回一个当前utc时间的 datetime 对象</span></span><br><span class="line"><span class="built_in">print</span>(datetime.datetime.utcnow())</span><br><span class="line"><span class="comment">#timedelta()</span></span><br><span class="line">now=datetime.datetime.now()</span><br><span class="line"><span class="built_in">print</span>(now)	<span class="comment">#2018-08-02 15:59:19.687474</span></span><br><span class="line">yes=now-datetime.timedelta(days=7)</span><br><span class="line"><span class="built_in">print</span>(yes)	<span class="comment">#2018-07-26 15:59:19.687474 </span></span><br><span class="line">year=now+datetime.timedelta(days=365)</span><br><span class="line"><span class="built_in">print</span>(year)	<span class="comment">#2019-08-02 15:59:19.687474</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="日历函数"><a href="#日历函数" class="headerlink" title="日历函数"></a>日历函数</h2><p>import calendar<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#calendar(Year)	获取指定年份的日历(默认4行3列)</span></span><br><span class="line"><span class="built_in">print</span>(calendar.calendar(2018))</span><br><span class="line"><span class="comment">#month()	获取指定年月的日历字符串</span></span><br><span class="line"><span class="built_in">print</span>(calendar.month(2018,8))</span><br><span class="line"><span class="comment">#monthcalendar()	获取一个年月的矩阵列表</span></span><br><span class="line"><span class="built_in">print</span>(calendar.monthcalendar(2018,8))</span><br><span class="line"><span class="comment">#calendar.isleap()	检测是否为闰年</span></span><br><span class="line"><span class="built_in">print</span>(calendar.isleap(2018))	<span class="comment">#False</span></span><br><span class="line"><span class="comment">#leapdays(y1，y2)	返回在y1,y2两年之间的闰年总数</span></span><br><span class="line"><span class="built_in">print</span>(calendar.leapdays(2000,2016))	<span class="comment">#4</span></span><br><span class="line"><span class="comment">#monthrange()	获取一个月是从哪天开始，本月有几天</span></span><br><span class="line"><span class="built_in">print</span>(calendar.monthrange(2018,8))	<span class="comment">#(2, 31)  2指1号为星期三</span></span><br><span class="line"><span class="comment">#weekday()	根据年月日计算周几（0-6）星期1 星期天</span></span><br><span class="line"><span class="built_in">print</span>(calendar.weekday(2018,8,1))	<span class="comment">#2</span></span><br><span class="line"><span class="comment">#timegm()	将时间元组转为时间戳</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#有一个人从2012-1-1日开始过上了三天打鱼两天晒网的日子，问今天该打鱼还是晒网</span></span><br><span class="line">import time</span><br><span class="line">def fish(end):</span><br><span class="line">    <span class="comment">#开始时间 格式化-时间元组-时间戳</span></span><br><span class="line">    start=<span class="string">'2012-1-1'</span></span><br><span class="line">    starttime=time.strptime(start,<span class="string">'%Y-%m-%d'</span>)</span><br><span class="line">    startDay=int(time.mktime(starttime))</span><br><span class="line">    <span class="comment">#结束时间</span></span><br><span class="line">    endtime=time.strptime(end,<span class="string">'%Y-%m-%d'</span>)</span><br><span class="line">    endDay=int(time.mktime(endtime))</span><br><span class="line"></span><br><span class="line">    days=(endDay-startDay)//86400</span><br><span class="line">    d=days%5</span><br><span class="line">    <span class="keyword">if</span> d&lt;3:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'打鱼'</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'晒网'</span>)</span><br><span class="line"></span><br><span class="line">fish(<span class="string">'2018-8-1'</span>)</span><br></pre></td></tr></table></figure>
       
 
       
@@ -221,7 +216,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hello</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">time</a>
         		</li>
       		
 		</ul>
@@ -277,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/Python_02/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/Python_15/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -291,18 +286,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/19/Python_03/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/03/Python_a/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Python基础3——控制语句
+          练习题
         
       </div>
     </a>
   
   
-    <a href="/2018/07/19/Python_01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python基础1——数据类型</div>
+    <a href="/2018/08/03/Python_16/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python基础16——模块和包</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -329,7 +324,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#运算符"><span class="toc-number">1.</span> <span class="toc-text">运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#算术运算符"><span class="toc-number">1.1.</span> <span class="toc-text">算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#比较运算符"><span class="toc-number">1.2.</span> <span class="toc-text">比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#赋值运算符"><span class="toc-number">1.3.</span> <span class="toc-text">赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#位运算符"><span class="toc-number">1.4.</span> <span class="toc-text">位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑与-and"><span class="toc-number">1.5.</span> <span class="toc-text">逻辑与  and</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑或-or"><span class="toc-number">1.6.</span> <span class="toc-text">逻辑或  or</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#逻辑非：-not"><span class="toc-number">1.7.</span> <span class="toc-text">逻辑非： not</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#成员运算符"><span class="toc-number">1.8.</span> <span class="toc-text">成员运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#身份运算符"><span class="toc-number">1.9.</span> <span class="toc-text">身份运算符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取变量类型-type（）"><span class="toc-number">2.</span> <span class="toc-text">获取变量类型  type（）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入库"><span class="toc-number">3.</span> <span class="toc-text">导入库</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#time"><span class="toc-number">1.</span> <span class="toc-text">time</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#时间模块的值"><span class="toc-number">1.1.</span> <span class="toc-text">时间模块的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#时间模块的函数"><span class="toc-number">1.2.</span> <span class="toc-text">时间模块的函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#python中时间日期格式化符号"><span class="toc-number">1.3.</span> <span class="toc-text">python中时间日期格式化符号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#datatime"><span class="toc-number">2.</span> <span class="toc-text">datatime</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#日历函数"><span class="toc-number">3.</span> <span class="toc-text">日历函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习"><span class="toc-number">4.</span> <span class="toc-text">练习</span></a></li></ol>
                     </div>
                 </span>
             </div>
